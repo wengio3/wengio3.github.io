@@ -5,7 +5,7 @@
     <title>Wengi's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is a Website Version of my resume">
+    <meta name="description" content="Portfolio">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/kube.min.css" />
@@ -27,7 +27,7 @@
 		<div class="container">
 			<header class="group top-nav">
 				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">DRACO</span>
+				    <span class="logo">WENGI</span>
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
@@ -82,28 +82,101 @@
 	</div>
 
 	<!-- Projects-->
-	<div class="award section second" id="achievements">
+	<div class="Projects section second" id="projects">
 		<div class="container">
-			<h1>Projects<br>Projects</h1>
+			<h1><br>Projects</h1>
 			<ul class="Projects">
-				<li>Amazon Vine Analysis</li>
-				<li>• Created an AWS RDS database with tables in pgAdmin, picked a dataset from the Amazon Review datasets, and extract the dataset into a Data Frame</li>
-				<li>• Used PySpark determined if there is any bias towards reviews written as part of the Vine program</li>
-				<li>• Tools used: AWS, GitHub, Google Colaboratory Notebook, PostgreSQL, PySpark</li>
-				<li><a href="https://github.com/wengio3/Amazon_Vine_Analysis"</a></li>
-				<li>GitHub</li>
+				<li><a href="#">Amazon Vine Analysis</a></li>
+				<li>Created an AWS RDS database with tables in pgAdmin, picked a dataset from the Amazon Review datasets, and extract the dataset into a Data Frame</li>
+				<li>Used PySpark determined if there is any bias towards reviews written as part of the Vine program</li>
+				<li>Tools used: AWS, GitHub, Google Colaboratory Notebook, PostgreSQL, PySpark</li>
+				<li><a href="https://github.com/wengio3/Amazon_Vine_Analysis"</a>GitHub</li>
+				
 			</ul>
 			<ul class="Projectst">
-				<li>December 2014</li>
-				<li>Audited X number of clients in only Y amount of time</li>
-				<li>Held a perfect attendance record</li>
-				<li>Were promoted after only X months in the role</li>
+				<li><a href="#">Biodiversity with Plotly</a></li>
+				<li>Created a bar chart to display the top 10 bacterial species (OTUs) and gauge chart that shows the weekly washing frequency's value and display the value as a measure from 0-10 on the progress bar in the gauge chart when an individual ID is selected from the dropdown menu</li>
+				<li>Used HTML and Bootstrap customized the webpage for the dashboard</li>
+				<li>Tools used: D3.js, GitHub, HTML, JavaScript, Plotly</li>
+				<li><a href="https://wengio3.github.io/Biodiversity_with_Plotly-/"</a>Deployment</li>
+				<li><a href="https://github.com/wengio3/Biodiversity_with_Plotly-"</a>GitHub</li>
+				
 			</ul>
 			<ul class="Projects">
-				<li>March 2014</li>
-				<li>Placed employees at X companies</li>
-				<li>United multiple teams post-merger</li>
+				<li><a href="#">Bike Sharing</a></li>
+				<li>Used Python and Pandas functions, converted the "trip duration" column from an integer to a Date Time data type to get the time in hours, minutes, and seconds (00:00:00), then exported the DataFrame as a CSV file for analysis</li>
+				<li>Used Tableau, create visualizations that show</li>
+				<li><a href="https://public.tableau.com/app/profile/wengelawit.f.dedebar/viz/CitiBikeCruisin/CitiBike"</a>Tableau public</li>
+				<li><a href="https://github.com/wengio3/bikesharing"</a>GitHub</li>
 			</ul>
 		</div>
 	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Languages</li>
+				<li>HTML/CSS, JavaScript, Python, R, SQL, VBA</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MongoDB, MySQL, PostgreSQL, SQLAlchemy, SQLite</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Data Manipulation and Visualization</li>
+				<li>Matplotlib, NumPy, Pandas, Plotly, Tableau</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Machine Learning</li>
+				<li>sci-kit learn, TensorFlow, PySpark</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Other</li>
+				<li>AWS, Excel, Extract-Transform-Load, Git, Jupyter Notebook, JSON, Web Scraping</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- name -->
+	<div class="name">
+		<div class="container text-centered">
+			<h1>Wengelawit Dedebar</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p></p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="wdedebar@gmail.com"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://github.com/wengio3"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/wengelawit-dedebar-b371621b4/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		
+		strings: ["New York City"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
+
+
 
